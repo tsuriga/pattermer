@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pattern Renamer</title>
+    <link rel="stylesheet" href="css/photon.min.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="window">
+
+      <header class="toolbar toolbar-header">
+        <h1 class="title spacious">
+          <div class="btn-group">
+            <button class="btn btn-large btn-default">
+              <span class="icon icon-folder" title="Open directory"></span>
+            </button>
+            <button class="btn btn-large btn-default">
+              <span class="icon icon-download" title="Load rename pattern"></span>
+            </button>
+            <button class="btn btn-large btn-default">
+              <span class="icon icon-upload" title="Save rename pattern"></span>
+            </button>
+            <button class="btn btn-large btn-default">
+              <span class="icon icon-help" title="Help"></span>
+            </button>
+          </div>
+        </h1>
+      </header>
+
+      <header class="toolbar toolbar-header">
+        <h1 class="title">
+          <form>
+            <div class="form-group">
+              <input id="txtRenamePattern" type="text" class="form-control" placeholder="Rename pattern" />
+            </div>
+          </form>
+        </h1>
+      </header>
+
+      <div class="window-content">
+        <div class="pane-group">
+          <div class="pane pane-sm">
+            <h5 class="pane-title">Searches</h5>
+            <hr/>
+
+            <div id="keywords">
+              Regexes
+            </div>
+          </div>
+
+          <div class="pane pane-sm sidebar">
+            <nav class="nav-group">
+              <h5 class="pane-title">Variables</h5>
+              <hr/>
+
+              <span class="nav-group-item active">
+                %author%
+              </span>
+              <span class="nav-group-item">
+                %year%
+              </span>
+              <span class="nav-group-item">
+                %location%
+              </span>
+            </nav>
+            <div class="form-small">
+              <form>
+                <div class="form-group">
+                </div>
+              </form>
+            </div>
+          </div>
+
+
+          <div class="pane pane-sm">
+            <h5 class="pane-title">Search queue</h5>
+            <hr/>
+
+            <ol>
+              <li>%author%</li>
+              <li>%year%</li>
+              <li>%location%</li>
+            </ol>
+          </div>
+
+          <div class="pane">
+            <h5 class="pane-title">File list</h5>
+            <hr/>
+
+            <table class="table-striped">
+              <tbody>
+                <tr>
+                  <td>
+                    MyImage_(2005)_[Photography-2005-Inc]_01.jpg
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    MyImage_(2005)_[Photography-2005-Inc]_02.jpg
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

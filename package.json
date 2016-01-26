@@ -1,0 +1,23 @@
+{
+    "name": "pattermer",
+    "version": "1.0.0",
+    "description": "Pattern renamer",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tsuriga/pattermer.git"
+    },
+    "keywords": [
+        "file",
+        "pattern",
+        "rename"
+    ],
+    "author": "tsuriga",
+    "license": "MIT",
+    "devDependencies": {
+        "electron-prebuilt": "^0.36.0"
+    }
+}
