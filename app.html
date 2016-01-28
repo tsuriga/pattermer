@@ -4,12 +4,11 @@
     <title>Pattern Renamer</title>
     <link rel="stylesheet" href="css/photon.min.css">
     <link rel="stylesheet" href="css/app.css">
-    <script src="js/pattermer.js"></script>
     <script type="application/javascript">
       window.addEventListener('load', function () {
-        const pattermer = new Pattermer();
+          const lib = require('./lib/Pattermer.js');
 
-        pattermer.run();
+          (new lib.Pattermer()).run();
       });
     </script>
   </head>

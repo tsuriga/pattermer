@@ -1,8 +1,8 @@
 'use strict';
 
-const electron = require('electron');
-const app = electron.app;
-const BrowserWindow = electron.BrowserWindow;
+const electron = require('electron'),
+    app = electron.app,
+    BrowserWindow = electron.BrowserWindow;
 
 let mainWindow;
 
