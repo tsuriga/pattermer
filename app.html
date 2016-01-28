@@ -4,12 +4,20 @@
     <title>Pattern Renamer</title>
     <link rel="stylesheet" href="css/photon.min.css">
     <link rel="stylesheet" href="css/app.css">
+    <script src="js/pattermer.js"></script>
+    <script type="application/javascript">
+      window.addEventListener('load', function () {
+        const pattermer = new Pattermer();
+
+        pattermer.run();
+      });
+    </script>
   </head>
   <body>
     <div class="window">
 
       <header class="toolbar toolbar-header">
-        <h1 class="title spacious">
+        <h1 class="title">
           <div class="btn-group">
             <button class="btn btn-large btn-default">
               <span class="icon icon-folder" title="Open directory"></span>
@@ -27,7 +35,7 @@
         </h1>
       </header>
 
-      <header class="toolbar toolbar-header">
+      <header class="toolbar">
         <h1 class="title">
           <form>
             <div class="form-group">
@@ -39,27 +47,29 @@
 
       <div class="window-content">
         <div class="pane-group">
-          <div class="pane pane-sm">
-            <h5 class="pane-title">Searches</h5>
-            <hr/>
+          <div class="pane pane-sm flexPane">
+            <div>
+              <h5 class="pane-title">Searches</h5>
+              <hr/>
+            </div>
 
-            <div id="keywords">
+            <div id="keywordContainer" class="dropZoneTarget">
               Regexes
             </div>
           </div>
 
           <div class="pane pane-sm sidebar">
-            <nav class="nav-group">
+            <nav id="navVariables" class="nav-group">
               <h5 class="pane-title">Variables</h5>
               <hr/>
 
-              <span class="nav-group-item active">
+              <span class="nav-group-item active" draggable="true">
                 %author%
               </span>
-              <span class="nav-group-item">
+              <span class="nav-group-item" draggable="true">
                 %year%
               </span>
-              <span class="nav-group-item">
+              <span class="nav-group-item" draggable="true">
                 %location%
               </span>
             </nav>
@@ -71,16 +81,19 @@
             </div>
           </div>
 
+          <div class="pane pane-sm flexPane">
+            <div>
+              <h5 class="pane-title">Search queue</h5>
+              <hr/>
+            </div>
 
-          <div class="pane pane-sm">
-            <h5 class="pane-title">Search queue</h5>
-            <hr/>
-
-            <ol>
-              <li>%author%</li>
-              <li>%year%</li>
-              <li>%location%</li>
-            </ol>
+            <div id="searchQueueContainer" class="dropZoneTarget">
+              <ol>
+                <li>%author%</li>
+                <li>%year%</li>
+                <li>%location%</li>
+              </ol>
+            </div>
           </div>
 
           <div class="pane">

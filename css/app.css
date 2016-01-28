@@ -1,8 +1,25 @@
-.spacious {
-    margin: 10px !important;
+.toolbar-header {
+    padding: 10px !important;
 }
 
 .pane-title {
     margin-left: 10px;
     font-weight: bold;
+}
+
+.flexPane {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexPane > div:nth-child(2) {
+    flex: 1;
+}
+
+.dropZoneWaiting {
+    background-color: #FF4C9F;
+}
+
+.dropZoneActive {
+    background-color: #DB2679;
 }

@@ -18,7 +18,9 @@ function createWindow() {
 
     mainWindow.loadURL('file://' + __dirname + '/app.html');
 
-    mainWindow.on('closed', function() {
+    mainWindow.openDevTools();
+
+    mainWindow.on('closed', function () {
         mainWindow = null;
     });
 }
