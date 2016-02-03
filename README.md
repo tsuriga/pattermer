@@ -13,3 +13,5 @@ It is built using ES6 and HTML5 technologies on Electron (v0.36.5) and Photon (v
 
 * alpha-v0.0.1 (2016-01-26): initial commit with UI draft
 * alpha-v0.0.2 (2016-01-31): add scrollbar support
+* alpha-v0.0.3 (2016-02-03): improve drag'n'drop features and enable dynamic queues
+* alpha-v0.0.4 (2016-02-04): switch drag'n'drops from native to Dragster

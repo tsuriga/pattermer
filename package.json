@@ -17,6 +17,9 @@
     ],
     "author": "tsuriga",
     "license": "MIT",
+    "dependencies": {
+        "dragsterjs": "1.2.x"
+    },
     "devDependencies": {
         "electron-prebuilt": "^0.36.0"
     }
