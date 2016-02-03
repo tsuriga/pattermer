@@ -24,6 +24,18 @@
     background-color: #DB2679;
 }
 
+.paneForm {
+    padding-top: 10px;
+}
+
+.paneForm > form > div {
+    margin-left: 10px;
+}
+
+.paneForm > form > div > input {
+    margin-top: 5px;
+}
+
 ::-webkit-scrollbar {
     width: 12px;
     height: 12px;
