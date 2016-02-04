@@ -18,7 +18,7 @@
     "author": "tsuriga",
     "license": "MIT",
     "dependencies": {
-        "dragsterjs": "1.2.x"
+        "dragster": "bensmithett/dragster#gh-pages"
     },
     "devDependencies": {
         "electron-prebuilt": "^0.36.0"
