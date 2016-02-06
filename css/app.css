@@ -24,6 +24,18 @@
     background-color: #DB2679;
 }
 
+.queueItemDragged {
+    border: 1px dashed #000;
+}
+
+.movableNodeContainer > li, .movableNodeContainer > span {
+    cursor: move;
+}
+
+li.hovered {
+    background: #FF95C8;
+}
+
 .paneForm {
     padding-top: 10px;
 }
