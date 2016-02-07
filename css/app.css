@@ -16,20 +16,20 @@
     flex: 1;
 }
 
-.dropZoneWaiting {
+.dropzoneWaiting {
     background-color: #FF95C8;
 }
 
-.dropZoneActive {
+.dropzoneActive {
     background-color: #DB2679;
 }
 
-.queueItemDragged {
+.draggedItem {
     border: 1px dashed #000;
 }
 
 .movableNodeContainer > li, .movableNodeContainer > span {
-    cursor: move;
+    cursor: -webkit-grab;
 }
 
 li.hovered {

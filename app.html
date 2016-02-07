@@ -46,31 +46,37 @@
 
       <div class="window-content">
         <div class="pane-group">
-          <div id="regexpPane" class="pane pane-sm flexPane">
+          <div id="regexpPane" class="pane pane-sm">
             <div>
               <h5 class="pane-title">Expressions</h5>
               <hr/>
             </div>
 
-            <ol id="regexpItems">
+            <ol id="regexpItems" class="movableNodeContainer">
             </ol>
           </div>
 
-          <div id="varPane" class="pane pane-sm sidebar">
-            <h5 class="pane-title">Variables</h5>
-            <hr/>
-            <nav id="navigationVariables" class="nav-group movableNodeContainer">
-            </nav>
-            <div class="form-small paneForm">
-              <form>
-                <div class="form-group">
-                  <input id="txtNewVar" type="text" placeholder="Variable" />
-                  <input id="txtNewExpression" type="text" placeholder="Expression" />
-                </div>
-                <div class="form-actions">
-                  <button id="btnAddVar" btn class="btn btn-primary">Add variable</button>
-                </div>
-              </form>
+          <div id="varPane" class="pane pane-sm sidebar flexPane">
+            <div>
+              <h5 class="pane-title">Variables</h5>
+              <hr/>
+            </div>
+
+            <div>
+              <nav id="navigationVariables" class="nav-group movableNodeContainer">
+              </nav>
+
+              <div class="form-small paneForm">
+                <form>
+                  <div class="form-group">
+                    <input id="txtNewVar" type="text" placeholder="Variable" />
+                    <input id="txtNewExpression" type="text" placeholder="Expression" />
+                  </div>
+                  <div class="form-actions">
+                    <button id="btnAddVar" btn class="btn btn-primary">Add variable</button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
 
