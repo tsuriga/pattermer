@@ -33,4 +33,4 @@ node_modules
 .node_repl_history
 
 # Save file
-data/presets.json
+data/config.json
