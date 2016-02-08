@@ -1,3 +1,5 @@
+/* Headers */
+
 .toolbar-header {
     padding: 10px !important;
 }
@@ -7,14 +9,7 @@
     font-weight: bold;
 }
 
-.flexPane {
-    display: flex;
-    flex-direction: column;
-}
-
-.flexPane > div:nth-child(2) {
-    flex: 1;
-}
+/* Drag'n'drop */
 
 .dropzoneWaiting {
     background-color: #FF95C8;
@@ -36,6 +31,17 @@ li.hovered {
     background: #FF95C8;
 }
 
+/* Panes */
+
+.flexPane {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexPane > div:nth-child(2) {
+    flex: 1;
+}
+
 .paneForm {
     padding-top: 10px;
 }
@@ -47,6 +53,33 @@ li.hovered {
 .paneForm > form > div > input {
     margin-top: 5px;
 }
+
+/* Modal window */
+
+body {
+    display: flex;
+}
+
+.modalHidden {
+    display: none;
+}
+
+.modalVisible {
+    display: flex;
+    flex: 1;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.70);
+    margin: 6px;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.modalInner {
+    align-self: center;
+}
+
+/* Scrollbars */
 
 ::-webkit-scrollbar {
     width: 12px;

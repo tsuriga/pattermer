@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="css/photon.min.css">
     <link rel="stylesheet" href="css/app.css">
     <script type="application/javascript">
-      window.addEventListener('load', function () {
+      window.addEventListener('load', () => {
           const lib = require('./lib/Pattermer.js');
 
           (new lib.Pattermer()).run();
@@ -13,6 +13,10 @@
     </script>
   </head>
   <body>
+    <div class="modalHidden">
+      <div class="modalInner">
+      </div>
+    </div>
     <div class="window">
 
       <header class="toolbar toolbar-header">
