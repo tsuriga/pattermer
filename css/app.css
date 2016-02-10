@@ -75,6 +75,12 @@ body {
     padding: 10px;
 }
 
+.modalInner {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+}
+
 /* Scrollbars */
 
 ::-webkit-scrollbar {
