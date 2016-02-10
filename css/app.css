@@ -67,8 +67,9 @@ body {
 .modalVisible {
     display: flex;
     flex: 1;
+    justify-content: center;
     z-index: 9999;
-    background: rgba(0, 0, 0, 0.70);
+    background: rgba(0, 0, 0, 0.7);
     margin: 6px;
     border-radius: 10px;
     border: 2px solid black;

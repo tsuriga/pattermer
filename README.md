@@ -18,3 +18,4 @@ It is built using ES6 and HTML5 technologies on Electron (v0.36.5) and Photon (v
 * alpha-v0.0.5 (2016-02-04): removed Dragster to introduce something more customizable
 * alpha-v0.0.6 (2016-02-06): replaced Dragster with Dragster (not even kidding)
 * alpha-v0.0.7 (2016-02-08): add rudimentary I/O operations
+* alpha-v0.0.8 (2016-02-10): add templates and preset saving
