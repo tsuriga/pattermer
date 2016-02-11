@@ -19,6 +19,10 @@
     background-color: #DB2679;
 }
 
+.dropzoneDelete {
+    background-color: #545454;
+}
+
 .draggedItem {
     border: 1px dashed #000;
 }
