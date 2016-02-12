@@ -1,18 +1,19 @@
 {
-    "name": "pattermer",
-    "version": "1.0.0",
-    "description": "Pattern renamer",
+    "name": "remmy",
+    "version": "1.0.1",
+    "description": "Remmy the pattern renamer",
     "main": "main.js",
     "scripts": {
         "start": "electron ."
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/tsuriga/pattermer.git"
+        "url": "git+https://github.com/tsuriga/remmy.git"
     },
     "keywords": [
         "file",
         "pattern",
+        "regexp",
         "rename"
     ],
     "author": "tsuriga",

@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="css/app.css">
     <script type="application/javascript">
       window.addEventListener('load', () => {
-          const lib = require('./lib/Pattermer.js');
+          const lib = require('./lib/Remmy.js');
 
-          (new lib.Pattermer()).run();
+          (new lib.Remmy()).run();
       });
     </script>
   </head>
@@ -31,7 +31,7 @@
             <button id="btnSavePreset" class="btn btn-large btn-default">
               <span class="icon icon-upload" title="Save the preset"></span>
             </button>
-            <button class="btn btn-large btn-default">
+            <button id="btnHelp" class="btn btn-large btn-default">
               <span class="icon icon-help" title="Help"></span>
             </button>
           </div>
