@@ -18,7 +18,8 @@
     "author": "tsuriga",
     "license": "MIT",
     "dependencies": {
-        "dragster": "bensmithett/dragster#gh-pages"
+        "dragster": "bensmithett/dragster#gh-pages",
+        "sanitize-filename": "1.5.x"
     },
     "devDependencies": {
         "electron-prebuilt": "^0.36.0"

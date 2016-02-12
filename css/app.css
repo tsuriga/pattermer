@@ -55,6 +55,16 @@ li.hovered {
     margin-top: 5px;
 }
 
+/* Buttons */
+
+button[disabled] {
+    cursor: not-allowed;
+}
+
+.hidden {
+    display: none;
+}
+
 /* Modal window */
 
 body {
