@@ -1,7 +1,19 @@
 <template>
-  <h3>Usage instructions</h3>
+  <h3 class="helpTitle">Help</h3>
 
-  <div class="form-actions">
+  <h4>Variables</h4>
+  <p>Variables are containers for regular expressions. Each variable can contain multiple expressions and the expressions are searched for in the order they appear in. Expressions within a variable can be reorganized and removed by dragging them in and from the expression pane.</p>
+
+  <h4>Queue</h4>
+  <p>The queue is the order in which the variables are searched from each filename. When an expression in a variable matches a part in the filename, the search cuts out that part into search results and moves onto the next variable. Variables can be added, reorganized and removed respectively to, in and from the queue by dragging.</p>
+
+  <h4>Renaming</h4>
+  <p>To rename files first you have to have something in the search queue and secondly you have to enter a renaming pattern. To refer to a variable in the pattern, wrap the variable name in percent signs, <code>%var_name%</code>. When you load in a folder the preview pane will show an up-to-date list of new filenames as conditions change. The renaming button is only active if there are no duplicates within the filenames. The new filenames are also sanitized for any invalid filename characters.</p>
+
+  <h4>Presets</h4>
+  <p>Presets are sets of variables and queues. You can save and load presets using buttons on the menu bar. Note that at the moment unsaved changes are lost so you'll have to manually save your changes before exiting to retain them. Presets are saved in a JSON config file under the data folder.</p>
+
+  <div class="form-actions helpFooter">
     <button id="btnModalCancel" class="btn btn-large btn-primary">Close</button>
   </div>
 </template>
