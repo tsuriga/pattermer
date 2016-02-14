@@ -32,7 +32,7 @@ For usage instructions consult the program's internal Help.
 - The scrollbar fixes are imperfect to say the least - they only work correctly
   if there's a scrollbar for one pane.
 
-* It's really quick and dirty code where I just wanted to learn how things work,
+\* It's really quick and dirty code where I just wanted to learn how things work,
   which I think is fine for a project like this. But should this grow into a
   proper program with more users than just me, the codebase definitely needs a
   rehaul for better testability and extendability.
